@@ -14,4 +14,10 @@ class welcomeController extends Controller{
 	public function frontpageAction(){
 		return new response('<html><p>Welcome to the first page</p></html>');
 	}
+	/**
+	*@Route("/signUp")
+	*/
+	public function signUppageAction(){
+		return new response('<html><p>Hi,you suck!</p></html>');
+	}
 }
