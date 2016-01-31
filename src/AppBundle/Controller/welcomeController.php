@@ -12,7 +12,8 @@ class welcomeController extends Controller{
 	*@Route("/")
 	*/
 	public function frontpageAction(){
-		return new response('<html><p>Welcome to the first page</p></html>');
+		// return new response('<html><p>Welcome to the first page</p></html>');
+		return $this->render('frontpage.html.twig');
 	}
 	/**
 	*@Route("/signUp")
