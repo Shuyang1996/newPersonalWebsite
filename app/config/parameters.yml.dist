@@ -4,7 +4,7 @@
 parameters:
     database_host:     localhost
     database_port:     3306
-    database_name:     symfony_heroku
+    database_name:     heroku_92b5c826144e2b9	
     database_user:     b2a44fee2943cb
     database_password: a3d883053573072
     # You should uncomment this if you want use pdo_sqlite
