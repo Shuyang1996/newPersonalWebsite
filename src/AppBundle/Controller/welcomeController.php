@@ -13,7 +13,7 @@ class welcomeController extends Controller{
 	*/
 	public function frontpageAction(){
 		// return new response('<html><p>Welcome to the first page</p></html>');
-		return $this->render('frontpage.html.twig');
+		return $this->render('test.html.twig');
 	}
 	/**
 	*@Route("/signUp")
