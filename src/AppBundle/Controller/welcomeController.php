@@ -21,4 +21,24 @@ class welcomeController extends Controller{
 	public function signUppageAction(){
 		return new response('<html><p>Hi,you suck!</p></html>');
 	}
+	/**
+	*@Route("/project")
+	*/
+	public function projectPageAction(){
+		return $this->render('project.html.twig');
+	}
+
+	/**
+	*@Route("/project/projectDLD")
+	*/
+	public function projectDLDAction(){
+		return $this->render('projectDLD.html.twig');
+	}
+
+	/**
+	*@Route("/project/projectWebsite")
+	*/
+	public function projectWebsiteAction(){
+		return $this->render('projectWebsite.html.twig');
+	}
 }
