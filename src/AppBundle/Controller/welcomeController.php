@@ -41,4 +41,13 @@ class welcomeController extends Controller{
 	public function projectWebsiteAction(){
 		return $this->render('projectWebsite.html.twig');
 	}
+
+	/**
+	*@Route("/project/projectLinux")
+	*/
+	public function projectLinuxAction(){
+		return $this->render('linux.html.twig');
+	}
+
+
 }
