@@ -13,6 +13,38 @@
 {% block project%}
   <h1 class="page-header">Personal Website</h1>
   <div class="mainpage">
-  	<p>This website was built based on Symfony MVC framework</p>
+
+  	<h3>Developing Environment</h3>
+    <p>This website was built based on Symfony MVC framework. I learned about MVC framework concept from my last summer internship at Splash. I’ve implemented a web application using cakePHP framework before. This symfony framework is more efficient, and some components of symfony is very powerful and organized on large scale projects.</p>
+
+    <p>You can check out the source code of this website at <a href="https://github.com/Shuyang1996/newPersonalWebsite">github</a>. 
+    </p>
+
+    <p>Based on my previous working experience, when the size of a website grows, using pure php can cause poor organization problem. I had trouble mapping my files, and encountered lots of issues such as where should I put code to handle a request from javascript to fetch certain information from my database. When I started developing on symfony, I appreciate this framework a lot.</p>
+
+    <h3>How this whole system works?</h3>
+
+    <img src="../symfonychart.png" width = "700" height="300"> <!-- need to take a closer look of url -->
+    
+    <h4>Controller</h4>
+
+    <p>First of all, let's break the whole system into different pieces 
+    Controller is a symfony component that takes information from HTTP request and creates and returns a symfony response object as HTTP response. This object could be an HTML page, or JSON array, or a web page status or data you requested from database. Below is an example that returns back an HTML page. 
+    </p>
+
+    <img src="../controllerdemo.png" width = "600" height="150">
+    
+    <h4>Router</h4>
+    <p>A route is a map from a URL path to a controller. For example, suppose you want to match any URL like /blog/my-post or /blog/all-about-symfony and send it to a controller that can look up and render that blog entry. The route is simple:</p>
+
+    <p>Now take a close look of the URL of this page, and compare with the route URL in the above page. Haha, it is the same. Coincidence? I don't think so. When you open a page with URL /project/projectWebsite, symfony will map that route with a controller which was mapped with that URL. Then, controller will execute a specific function which was mapped with that controller, in this case, controller will render an HTML page as a response object for this route. Interesting right? </p>
+
+    <p>Now you can get the idea why symfony is good for developing large scale web application. Because the whole system connects different parts with simple but efficient logic. It is easy for you to manage and connect different code file together without mistakes or logic confusion.</p>
+
+
+    <h4>Front-end template</h4>
+    <p>Now I am going introduce a powerful front-end page generator: twig. The amazing part of twig is that you can reuse your code in a super efficient way. You can extend from parent html template and just change specific parts, here is an example.</p>
+
+
   </div>
 {% endblock%}
