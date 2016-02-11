@@ -1,9 +1,5 @@
 {% extends 'projectDLD.html.twig' %}
 
-{% block project%}
-	<h1 class="page-header">2015 Summer Internship</h1>
-{% endblock%}
-
 {% block navbar%}
     <ul class="nav nav-sidebar">
       <li><a href="/project">Projects Overview <span class="sr-only">(current)</span></a></li>
@@ -12,8 +8,26 @@
       <li><a href="/project/projectLinux">Linux Operating System</a></li>
       <li><a href="/project/projectLinux">Online Book Store</a></li>
       <li><a href="/project/projectDLD">Digital Logic design</a></li>
-      <li><a href="/">Competitive Programming</a></li>
-      <li><a href="/">Data Structure & Algorithm</a></li>
+      <li><a>Competitive Programming</a></li>
+      <li><a>Data Structure & Algorithm</a></li>
       </ul>
 {% endblock%}
 
+{% block project%}
+      <h1 class="page-header">2015 Summer Internship</h1>
+      <p>Last summer, I worked at Splash as a full stack developer. Splash is a marketing software where you can create your own beautiful,mobile-responsive event site. I built an internal web application which helps product manager manage client assets like photo, vedio, and other digital data. After I left, Splash engineers pushed my code to production and deployed the application.</p>
+
+      <p>The developing environment is using cakePHP a php framework. Need to say more about it.</p>
+
+      <p>This application interacts with MySQL database, request and fetch data by using jQuery ajax call. The specialty of this application is that it is a real-time site. When managers upload photo, or request certain client information, the application can response without freshing the page. I put lots of effort in jQuery functions for this application.</p>
+
+      <img src="../ajaxdemo.png" width = "600" height= "300">
+
+      <p>I implemented lots of ajax API call which transfered lots of digitial information in different format. Because of the respect for previous company, I did not upload ajax sample code in my blog. If you are interested in more details of how I handled these ajax call for requesting date and receive response object from database, you are more than welcome to email me and set up a conversation. My email is william-ysy@outlook.com.</p>
+
+
+
+
+
+
+{% endblock%}
