@@ -49,5 +49,12 @@ class welcomeController extends Controller{
 		return $this->render('linux.html.twig');
 	}
 
+	/**
+	*@Route("/project/project2015Internship")
+	*/
+	public function projectInternAction(){
+		return $this->render('projectIntern.html.twig');
+	}
+
 
 }
