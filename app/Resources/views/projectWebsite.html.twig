@@ -31,19 +31,17 @@
     
     <h4>Controller</h4>
 
-    <p>First of all, let's break the whole system into different pieces 
+    <p>First of all, let's break the whole system into different pieces. 
     Controller is a symfony component that takes information from HTTP request and creates and returns a symfony response object as HTTP response. This object could be an HTML page, or JSON array, or a web page status or data you requested from database. Below is an example that returns back an HTML page. 
     </p>
 
     <img src="../controllerdemo.png" width = "600" height="150">
     
     <h4>Router</h4>
-    <p>A route is a map from a URL path to a controller. For example, suppose you want to match any URL like /blog/my-post or /blog/all-about-symfony and send it to a controller that can look up and render that blog entry. The route is simple:</p>
 
-    <p>Now take a close look of the URL of this page, and compare with the route URL in the above page. Haha, it is the same. Coincidence? I don't think so. When you open a page with URL /project/projectWebsite, symfony will map that route with a controller which was mapped with that URL. Then, controller will execute a specific function which was mapped with that controller, in this case, controller will render an HTML page as a response object for this route. Interesting right? </p>
+    <p>Now take a close look of the URL of this page, and compare with the route URL in the above snapshot. Haha, it is the same. Coincidence? I don't think so. When you open a page with URL /project/projectWebsite, symfony will map that route with a controller which was mapped with that URL. Then, controller will execute a specific function which was mapped with that controller, in this case, controller will render an HTML page as a response object for this route. Interesting right? </p>
 
     <p>Now you can get the idea why symfony is good for developing large scale web application. Because the whole system connects different parts with simple but efficient logic. It is easy for you to manage and connect different code file together without mistakes or logic confusion.</p>
-
 
     <h4>Front-end template</h4>
     <p>Now I am going introduce a powerful front-end page generator: twig. The amazing part of twig is that you can reuse your code in a super efficient way. You can extend from parent html template and just change specific parts, here I wrote two example twig pages to demonstrate the idea</p>
@@ -55,18 +53,16 @@
     <p>This is the child template which heriates all the properties from parent</p>
 
     <img src="../projectOS.png" width="450" height="150">
+    <p>The parent template defines the base HTML skeleton document. In this example, three block areas are defined (assetLink, navbar and projectconten). Each block may be overridden by a child template or left with its default implementation. This template could also be rendered directly. In that case of child template, the navbar block would simply retain the default values used in parent template, and assetLink and project block are overriden by new values in child template. This is very super convenient for codereusing. Also, you can use twig to generate css and javascript page.</p>
 
     <h4>Doctrine tool with database</h4>
-    <p></p>
+    <p>Doctrine is a tool for configuring database table with MySQL database. Instead of using flat SQL command, doctrine tool makes that process way much easier. I am still implementing this feature on this website. I will update more details about Doctrine as soon as possible.</p>
 
-
-    <h3>Upcoming features for this Blog</h3>
-
-    <h4>More API function with databse</h4>
-    <h4>Online editing tool for blogs</h4>
-    <h4>People can leave comments under my blogs.</h4>
-    <h4>Supported with MySQL databse.</h4>
-    <p>This feature works locally, but there is problem with deloying database setup with ClearDB on Heroku server. Currently I trying to solve this issue.</p>
-    <p>I love these ideas </p>
+    <h3>Upcoming features for this Website</h3>
+    <h5>More API function with databse</h5>
+    <h5>Online editing tool for blogs</h5>
+    <h5>People can leave comments under my blogs.</h5>
+    <h5>Supported with MySQL databse.</h5>
+    
   </div>
 {% endblock%}
