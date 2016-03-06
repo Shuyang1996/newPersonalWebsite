@@ -40,7 +40,8 @@ body{
   height:100%;
 }
 body {
-    background: url(http://thealexzone.com/img/panorama.gif) no-repeat 50% 50% fixed;
+    background: url(http://s11.postimg.org/dhfqg035f/panorama.gif) no-repeat 50% 50% fixed;
+   /* http://thealexzone.com/img/panorama.gif*/
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
