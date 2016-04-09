@@ -63,5 +63,12 @@ class welcomeController extends Controller{
 		return $this->render('projectBookstore.html.twig');
 	}
 
+	/**
+	*@Route("/project/projectDsa")
+	*/
+	public function projectDsaAction(){
+		return $this->render('projectDsa.html.twig');
+	}
+
 
 }
